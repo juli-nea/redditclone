@@ -37,3 +37,7 @@
     transform: translateY(0px);
   }
 }
+
+.post-img {
+  max-width: 500px;
+}
