@@ -28,18 +28,23 @@ export const Posts = () => {
             <div>
             <p>Doneski</p>
 
-                    {Object.values(posts).map((post, i) => (
-                    
-                        <li key={i}>
-                        <div className="post-container">
-                            <h2>{post.title}</h2>
-                            <p>{post.selftext}</p>
+                <ul>
 
-                           { isImage(post.url) ? (<img className="post-img" src={post.url}/>) : ("") }
+                    {Object.values(posts).map((post, i) => (
                         
-                        </div>
+                        
+                        <li key={i}>
+                            <div className="post-container">
+                                <h2>{post.title}</h2>
+                                <p>{post.selftext}</p>
+
+                            { isImage(post.url) ? (<img className="post-img" src={post.url}/>) : ("") }
+                            
+                            </div>
                         </li>
                     ))}
+
+                </ul>
              </div>
         )
         

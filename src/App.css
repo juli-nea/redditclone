@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
 .App {
   text-align: center;
 }
@@ -38,6 +44,27 @@
   }
 }
 
+.post-container {
+  width: 800px;
+  border-radius: 9px;
+
+  padding: 20px;
+  margin: 20px;
+
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+.post-container h2 {
+  font-size: 24px;
+  
+}
+
 .post-img {
   max-width: 500px;
 }
+
+ul {
+  list-style: none;
+}
+
